@@ -11,7 +11,41 @@
 
     <h1>VIDEOS (mp4 - webm)EN HTML 5</h1>
 
-    <video poster="movie.jpg" width="500" height="250" controls>
+    <h2> Ejercicio 1.2 y 1.3</h2>
+
+    <video  width="500" height="250" controls>
+        <source src="assets/practica.webm" type="video/webm" codecs="vp8.0, vorbis" />
+        <source src="assets/practica.mp4" type="video/mp4" codecs="avc1.4D401E, mp4a.40.2" />
+        <p>This is fallback content</p>
+    </video>
+
+    <h2> Ejercicio 1.4</h2>
+
+    <h3>Tags: poster para una imagen inicial en referncia al video  y muted para silenciar</h3>
+
+    <video poster="/assets/gos.jpeg" width="500" height="250" controls muted>
+        <source src="assets/practica.webm" type="video/webm" codecs="vp8.0, vorbis" />
+        <source src="assets/practica.mp4" type="video/mp4" codecs="avc1.4D401E, mp4a.40.2" />
+        <p>This is fallback content</p>
+    </video>
+
+    <h3>Tags: muted para silenciar el video y autoplay para un inicio automático del video, en algunos navegadores como safari no permite el autoplay.</h3>
+
+    <video width="500" height="250" muted autoplay>
+        <source src="assets/practica.webm" type="video/webm" codecs="vp8.0, vorbis" />
+        <source src="assets/practica.mp4" type="video/mp4" codecs="avc1.4D401E, mp4a.40.2" />
+        <p>This is fallback content</p>
+    </video>
+    
+    <h3>Tag: preload="none" con este tag no cargará el video al inicio.  </h3>
+    <video width="500" height="250" controls preload="none">
+        <source src="assets/practica.webm" type="video/webm" codecs="vp8.0, vorbis" />
+        <source src="assets/practica.mp4" type="video/mp4" codecs="avc1.4D401E, mp4a.40.2" />
+        <p>This is fallback content</p>
+    </video>
+
+    <h3>Tag: loop para reproducción continua.</h3>
+    <video width="500" height="250" controls loop>
         <source src="assets/practica.webm" type="video/webm" codecs="vp8.0, vorbis" />
         <source src="assets/practica.mp4" type="video/mp4" codecs="avc1.4D401E, mp4a.40.2" />
         <p>This is fallback content</p>
